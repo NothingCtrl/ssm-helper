@@ -28,6 +28,7 @@ docker run --rm --name ssm-helper-test-con -e PORT=8080 -e BEAT_URL=http://foo.b
 ```
 
 * `--rm` to remove container when it stop
+* `-e BEAT_URL=http://foo.bar/beat` is optional to set heartbeat server
 
 # Usage and note
 
