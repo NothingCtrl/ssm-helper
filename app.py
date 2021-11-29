@@ -50,10 +50,6 @@ def send_beat():
     client_version = os.getenv('BEAT_CLIENT_VERSION', '1.0.0')
     status = False
     try:
-        print(json.dumps({
-                "client_name": client_name,
-                "client_version": client_version
-            }))
         rp = requests.post(beat_host, data={
             "json_data": json.dumps({
                 "client_name": client_name,
